@@ -4,7 +4,7 @@ import {config} from './config/config';
 
 export const sequelize = new Sequelize({
   'username': config.username,
-  'password': config.password,
+  'password': String(config.password),
   'database': config.database,
   'host': config.host,
 
